@@ -2,6 +2,10 @@ let input = document.getElementById("input");
 let list = document.getElementById("list");
 
 function AddText() {
+        if (input.value === "") {
+                alert("type any message");
+                return;
+        }
 
 
         let li = document.createElement("li");
